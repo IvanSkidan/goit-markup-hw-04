@@ -158,6 +158,8 @@ img {
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
 }
 
 .header-link:hover, 
@@ -165,16 +167,33 @@ img {
     color: var(--accent-color);
 }
 
+.envelope-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.smartphone-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 /* Унікальний контент сторінки */
 
 /* Ефективні рішення для бізнесу */
 
 .hero {
-    background-color: #2F303A;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: scroll;
+    /* max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 .hero-title {
@@ -231,8 +250,6 @@ img {
     display: flex;
     flex-wrap: nowrap;
     /* margin-left: -30px; */
-    
-
 }
 
 .about-item {
@@ -247,6 +264,39 @@ img {
     margin-right: 0;
 }
 
+.about-content {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ::before - створює псевдоелемент перед усім контентом елемента (на початку)
+::after - створює псевдоелемент після всього контенту елемента (в кінці). */
+
+/* .about-item::before {
+    content: "";
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: scroll;
+}
+
+.about-item:nth-child(1)::before {
+    background-image: url();
+} */
+
 .about-title {
     font-size: 14px;
     line-height: 1.14;
@@ -255,7 +305,6 @@ img {
     color: var(--main-color);
     margin-bottom: 10px;
 }
-
 .about-text {
     font-size: 14px;
     line-height: 1.71;
@@ -324,7 +373,9 @@ img {
     /* width: calc((100% - 30px) / 3);
     margin-left: 30px; */
     /* outline: 1px solid red; */
-
+    border-radius: 0px 0px 4px 4px;
+    /* overflow: hidden; */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-item:last-child {
@@ -347,6 +398,48 @@ img {
     letter-spacing: 0.03em;
     color: var(--text-color);
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: #2196F3;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+}
+
+.social-link:hover, 
+.social-link:focus {
+    color: #FFFFFF;
+}
+
+.social-icon {
+    fill: currentColor;
 }
 
 .team-content {
@@ -355,6 +448,10 @@ img {
 }
 
 /* Підвал сторінки */
+
+.footer .container {
+    display: flex;
+}
 
 .footer {
     background-color: #2F303A;
@@ -423,6 +520,58 @@ img {
     color: var(--accent-color);
 }
 
+/* Приєднуйтесь */
+
+.join {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.join-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.join-list {
+    display: flex;
+    justify-content: center;
+}
+
+.join-item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.join-item:hover,
+.join-item:focus {
+    background-color: #2196F3;
+}
+
+.join-item:last-child {
+    margin-right: 0;
+}
+
+.join-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.join-icon {
+    fill: currentColor;
+}
+
 /* Portfolio */
 
 /* Унікальний контент сторінки */
@@ -477,6 +626,7 @@ img {
     border: 0;
     text-align: center;
     align-items: center;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Карточки */
@@ -494,6 +644,10 @@ img {
     margin-left: 30px;
     margin-top: 30px;
     /* outline: 1px solid red; */
+}
+
+.work-element:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-title {
