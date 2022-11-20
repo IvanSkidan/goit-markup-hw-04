@@ -447,6 +447,58 @@ img {
     padding-bottom: 30px;
 }
 
+/* Постійні клієнти */
+
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.client-list {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.client-item {
+    margin-right: 30px;
+    background-color: #FFFFFF;
+    /* outline: 1px solid red; */
+    min-width: 170px;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item:last-child {
+    margin-right: 0;
+}
+
+.client-link {
+    display: block;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    color: #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+
+.client-icon {
+    fill: currentColor;
+}
+
 /* Підвал сторінки */
 
 .footer .container {
