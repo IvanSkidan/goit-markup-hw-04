@@ -413,11 +413,6 @@ img {
     border-radius: 50%;
 }
 
-.social-item:hover,
-.social-item:focus {
-    background-color: #2196F3;
-}
-
 .social-item:last-child {
     margin-right: 0;
 }
@@ -430,10 +425,12 @@ img {
     align-items: center;
     justify-content: center;
     color: #AFB1B8;
+    border-radius: 50%;
 }
 
 .social-link:hover, 
 .social-link:focus {
+    background-color: #2196F3;
     color: #FFFFFF;
 }
 
@@ -606,11 +603,6 @@ img {
     border-radius: 50%;
 }
 
-.join-item:hover,
-.join-item:focus {
-    background-color: #2196F3;
-}
-
 .join-item:last-child {
     margin-right: 0;
 }
@@ -623,6 +615,12 @@ img {
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+    background-color: #2196F3;
 }
 
 .join-icon {
